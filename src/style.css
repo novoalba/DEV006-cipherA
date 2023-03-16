@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+
+body {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    
+}
+
+/*#head {
+    text-align: center;
+    background-color: #d024c7;
+    /*width: 30%;
+    height: 40%;
+    
+}*/
+
+::placeholder {
+    text-align: center;
+}
+
+#mssg {
+    background-color: #f0caf6;
+    border-color: #f55796;
+    /*width: 20%;*/
+}
+section {
+    border: 2px solid #d024c7;
+    border-radius: 7px;
+    padding: 7px;
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font: 1rem "Fira Sans", sans-serif;
+    background-color: #e1a4f6;
+    /*width: 30%;*/
+  }
+
+button {
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+  
+    background-color: #ffb9e4;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background: #f55796;
+    color: #fff;
+  }
+
+  .neon {
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-top: 50px;
+    font: 1rem "Fira Sans", sans-serif;
+    background-color: #eb6acb;
+  }
+
+  .neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #bc13fe,
+      0 0 82px #bc13fe,
+      0 0 92px #bc13fe,
+      0 0 102px #bc13fe,
+      0 0 151px #bc13fe;
+  }
+    
+  body {
+    font-size: 10px;
+    font-family: "Sacramento", sans-serif;
+    background-color: #010a01;
+    display: block;
+    justify-content: center;
+    align-items: center;  
+  }  
+  
+  h1 {
+    text-align: center;
+    font-weight: 200;
+  }
+    
+  h1 {
+    font-size: 2.2rem;
+    animation: pulsate 1s infinite alternate;  
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe; 
+  }
+  
+  @keyframes pulsate {
+      
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #bc13fe,
+        0 0 80px #bc13fe,
+        0 0 90px #bc13fe,
+        0 0 100px #bc13fe,
+        0 0 150px #bc13fe;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #bc13fe,
+      0 0 45px #bc13fe,
+      0 0 55px #bc13fe,
+      0 0 70px #bc13fe,
+      0 0 80px #bc13fe;
+    }
+  }

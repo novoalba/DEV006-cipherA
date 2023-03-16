@@ -4,20 +4,26 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
   </head>
   <body>
-    <h1>Sistema interno de cifrado </h1>
+    <section class="neon">
+    <h1 class="neonText">SIC <p>(sistema interno de cifrado)</p></h1>
+    </section>
+    <section>
     <h3>MENSAJE:</h3>
-    <p><input type="text" id="mssg" autocomplete="off" spellcheck="false" /></p>
+    <input type="text" id="mssg" autocomplete="off" spellcheck="false" placeholder="Inserte mensaje" />
     <h3>DESPLAZAMIENTO:</h3>
-    <input id="range" type="range" value="10" min="1" max="20" oninput="this.nextElementSibling.value = this.value">
-    <output>10</output>
+    <input id="range" type="range" value="10" min="1" max="33" oninput="this.nextElementSibling.value = this.value">
+    <output id="range2">15</output>
     <p><button type="button" id="cyphBtn">Cifrar</button>
       <button type="button" id="decyphBtn">Descifrar</button>
     </p>
     <div id="result">
       <h3>MENSAJE CIFRADO/DESCIFRADO:</h3>
     </div>
+    <p></p>
+    <p><button type="button" id="goBack">Regresar</button></p>
+    </section>
   </body>
 </html>

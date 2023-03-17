@@ -2,12 +2,16 @@
 const cipher = {
   //función encriptar
   encode: (offset, string) => {
+    if (typeof offset !== "number" || typeof string !== "string") {
+      throw new TypeError("Debe ingresar una cadena de texto en MENSAJE y un número en DESPLAZAMIENTO");
+    }
     //declarar variables para guardar los valores del index
     const offsetV = offset;
     const stringV = string;
     console.log(offsetV);
     console.log(stringV);
     let result = "";
+
     for (let i= 0; i < stringV.length; i++) {
       //posición ascii
       let asciiPos = stringV.charCodeAt(i);
@@ -25,6 +29,9 @@ const cipher = {
   },
   //función desencriptar
   decode: (offset, string) => {
+    if (typeof offset !== "number" || typeof string !== "string") {
+      throw new TypeError("Debe ingresar una cadena de texto en MENSAJE y un número en DESPLAZAMIENTO");
+    }
     const offsetV = offset;
     const stringV = string;
     console.log(stringV);

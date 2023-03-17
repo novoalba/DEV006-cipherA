@@ -1,4 +1,3 @@
-
 //objeto:
 const cipher = {
   //función encriptar

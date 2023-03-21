@@ -8,13 +8,13 @@ const string = document.getElementById("mssg");
 //en el index.js declaramos todo lo que vaya ligado al html:
 const buttonE = document.getElementById("cyphBtn")
 buttonE.addEventListener("click", ()=>{
-  document.getElementById("resulted").innerHTML = cipher.encode(offset.value,string.value);
+  document.getElementById("resulted").innerHTML = cipher.encode(parseInt(offset.value),string.value);
 });
 
 const buttonD = document.getElementById("decyphBtn")
 buttonD.addEventListener("click", ()=>{
   
-  document.getElementById("resulted").innerHTML = cipher.decode(offset.value,string.value);
+  document.getElementById("resulted").innerHTML = cipher.decode(parseInt(offset.value),string.value);
 });
 
 const buttonGB = document.getElementById("goBack")

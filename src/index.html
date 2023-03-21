@@ -14,12 +14,12 @@
     <h3>MENSAJE:</h3>
     <input type="text" id="mssg" autocomplete="off" spellcheck="false" placeholder="Inserte mensaje" />
     <h3>DESPLAZAMIENTO (1-33):</h3>
-    <input id="range" type="number" name="range" min="1" max="33" placeholder="Inserte un número">
+    <input id="range" type="number" name="range" min="1" max="33" placeholder="Inserte un número" pattern="[0-9]">
     <p><button type="button" id="cyphBtn">Cifrar</button>
       <button type="button" id="decyphBtn">Descifrar</button>
     </p>
     <div id="resultD">
-      <h3>MENSAJE CIFRADO/DESCIFRADO:<span id="resulted"></span></h3>
+      <h3>MENSAJE CIFRADO/DESCIFRADO: <span id="resulted"></span></h3>
     </div>
     <p></p>
     <p><button type="button" id="goBack">Regresar</button></p>

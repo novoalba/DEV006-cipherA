@@ -2,8 +2,8 @@
 const cipher = {
   //función encriptar
   encode: (offset, string) => {
-    console.log(typeof string);
-    console.log(typeof offset);
+    //console.log(typeof string);
+    //console.log(typeof offset);
     let result = "";
     if (typeof offset !== "number" || typeof string !== "string") {
       throw TypeError ("Ingresa un número para desplazamiento y una cadena de texto para el mensaje");
@@ -13,7 +13,7 @@ const cipher = {
 
       //posición ascii
       let asciiPos = string.charCodeAt(i);
-      console.log(asciiPos);
+      //console.log(asciiPos);
       
       if (asciiPos >= 65 && asciiPos <=90){
         asciiPos = ((asciiPos - 65 + (offset))%26)+65;
@@ -22,14 +22,14 @@ const cipher = {
         asciiPos = ((asciiPos - 97 + (offset))%26)+97;
       }
       result += String.fromCharCode(asciiPos);
-      console.log(result);
+      //console.log(result);
       
     } return result;
   },
   //función desencriptar
   decode: (offset, string) => {
-    console.log(typeof string);
-    console.log(typeof offset);
+    //console.log(typeof string);
+    //console.log(typeof offset);
     let result = "";
     if (typeof offset !== "number" || typeof string !== "string") {
       throw TypeError ("Ingresa un número para desplazamiento y una cadena de texto para el mensaje");
